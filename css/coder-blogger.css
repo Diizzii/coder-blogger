@@ -28,10 +28,14 @@ a:visited {
   color: var(--clr-primary-7);
 }
 
+form {
+  width: 100%;
+}
+
 /* Global Classes */
 
 .section {
-  min-height: 50vh;
+  min-height: 65vh;
   padding: 5rem;
 }
 
