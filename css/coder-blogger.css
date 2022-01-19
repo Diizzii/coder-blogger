@@ -45,6 +45,9 @@ form {
 
 .section-image {
   display: block;
+  max-height: 35rem;
+  width: 100%;
+  object-fit: fill;
 }
 
 .section-grid {
@@ -61,6 +64,11 @@ form {
 
 .section-card-alternate {
   background-color: var(--clr-primary-9);
+}
+
+.section-form {
+  padding: 2.5rem;
+  box-shadow: var(--dark-shadow);
 }
 
 /* Hero Section */
