@@ -67,14 +67,15 @@ form {
 }
 
 .section-form {
-  padding: 2.5rem;
+  padding: 2rem;
   box-shadow: var(--dark-shadow);
 }
 
 /* Hero Section */
 
 .hero {
-  min-height: calc(100vh - 4rem);
+  margin-top: 2rem;
+  min-height: calc(100vh - 6rem);
   background-image: url('/assets/hero.jpg');
   object-fit: cover;
   background-position: center;
@@ -93,6 +94,25 @@ form {
 .hero-card-h2 {
   color: var(--clr-primary-7);
   font-size: 1.5rem;
+}
+
+/* Section Bar */
+
+.section-bar {
+  min-height: 5rem;
+}
+
+.section-bar-container {
+  padding-top: 0.8rem;
+}
+
+.section-bar-keyword {
+  background-color: var(--clr-white);
+  color: var(--clr-primary-1) !important;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-style: italic;
+  letter-spacing: 2px;
 }
 
 /* Footer */
