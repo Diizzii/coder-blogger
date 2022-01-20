@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coder Blogger</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/coder-blogger.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Coder Blogger</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="archive.html" class="nav-link active">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a href="post.html" class="nav-link">Post</a>
+            </li>
+            <li class="nav-item">
+              <a href="404.html" class="nav-link">404</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero hero-archive section-grid">
+      <div class="container">
+        <div class="hero-card">
+          <h1 class="mb-2">Our Collected Wisdom</h1>
+          <h2 class="hero-card-h2 mb-4">Read And Learn</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, cumque modi! Dicta, omnis nemo ea quisquam rerum reiciendis obcaecati dignissimos cupiditate neque aperiam eum exercitationem laboriosam.</p>
+          <p> Cumque eveniet beatae neque doloremque natus unde veniam nobis libero, voluptatibus culpa ipsam officia mollitia ea! Ullam voluptatum velit voluptatibus nostrum, sit quis quos?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="section">
+      <div class="container">
+        <article class="blogpost-short">
+          <div class="row">
+            <div class="col-md section-grid">
+              <div class="blogpost-short-image">
+                <img src="/assets/blogpost-image.jpg" alt="blogpost image" class="img-fluid">
+                <div class="blogpost-short-heading">
+                  <h2>Blogpost Title</h2>
+                  <h5>May 1, 2022</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md p-3 px-4">
+              <div class="blogpost-short-content">
+                <h5>This Is a Short Summary of the Content</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quod temporibus assumenda vel, officia dolore impedit nulla doloremque distinctio, exercitationem adipisci saepe aliquam perspiciatis quisquam laborum. Unde exercitationem molestiae possimus!</p>
+                
+                <a href="#" class="btn btn-dark blogpost-short-content-button">Read Post</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="blogpost-short">
+          <div class="row">
+            <div class="col-md section-grid">
+              <div class="blogpost-short-image">
+                <img src="/assets/blogpost-image.jpg" alt="blogpost image" class="img-fluid">
+                <div class="blogpost-short-heading">
+                  <h2>Blogpost Title</h2>
+                  <h5>May 1, 2022</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md p-3 px-4">
+              <div class="blogpost-short-content">
+                <h5>This Is a Short Summary of the Content</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quod temporibus assumenda vel, officia dolore impedit nulla doloremque distinctio, exercitationem adipisci saepe aliquam perspiciatis quisquam laborum. Unde exercitationem molestiae possimus!</p>
+                
+                <a href="#" class="btn btn-dark blogpost-short-content-button">Read Post</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section section-alternate">
+      <div class="container">
+        <div class="row">
+          <div class="col-md order-md-2 section-grid">
+            <img src="/assets/contact.jpg" alt="content-pic" class="img-fluid section-image mb-sm-3">
+          </div>
+          <div class="col-md order-md-1">
+            <h2>Get In Touch!</h2>
+            <h5 class="mb-3">We Look Forward To Hearing From You</h5>
+            <form action="" class="section-form form-alternate">
+              <div class="form-group mb-3">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" id="" placeholder="Your Name">
+              </div>
+              <div class="form-group mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="" placeholder="Enter email">
+                <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group mb-3">
+                <label for="">Your Message</label>
+                <textarea class="form-control" id="" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-3 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">
+          Copyright &copy; 2022
+          <a href="https://dkdev.link" target="_blank">Dieter Kribbel</a>
+        </p>
+
+        <a href="#" class="position-absolute>
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

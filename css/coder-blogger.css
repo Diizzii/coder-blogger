@@ -36,7 +36,15 @@ form {
 
 .section {
   min-height: 65vh;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .section-alternate {
@@ -71,18 +79,38 @@ form {
   box-shadow: var(--dark-shadow);
 }
 
+@media screen and (max-width: 767px) {
+  .section-form {
+    padding: 1rem;
+  }
+}
+
+/* Footer */
+
+.lead {
+  margin-bottom: 0;
+}
+
+/**
+-----
+Index Page
+-----
+**/
+
 /* Hero Section */
 
 .hero {
   margin-top: 2rem;
   min-height: calc(100vh - 6rem);
-  background-image: url('/assets/hero.jpg');
   object-fit: cover;
   background-position: center;
 }
 
+.hero-index {
+  background-image: url('/assets/hero.jpg');
+}
+
 .hero-card {
-  width: 100%;
   max-width: 35rem;
   margin: 0 auto;
   background-color: var(--clr-primary-1);
@@ -113,10 +141,76 @@ form {
   padding-right: 5rem;
   font-style: italic;
   letter-spacing: 2px;
+  max-width: 25rem;
 }
 
-/* Footer */
+/**
+-----
+Archive Page
+-----
+**/
 
-.lead {
-  margin-bottom: 0;
+/* Hero Section */
+
+.hero-archive {
+  background-image: url('/assets/archive.jpg');
+}
+
+/* Blog Posts Section */
+
+.blogpost-short {
+  min-height: 15rem;
+  background-color: var(--clr-primary-9);
+  margin-bottom: 3rem;
+  box-shadow: var(--dark-shadow);
+}
+
+.form-alternate {
+  background-color: var(--clr-white);
+}
+
+.blogpost-short-image {
+  position: relative;
+  min-width: 100%;
+  display: block;
+}
+
+.blogpost-short-heading {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  color: var(--clr-white);
+  z-index: 2;
+  transform: translateY(-50%);
+  min-height: 30%;
+  min-width: 40%;
+}
+
+.blogpost-short-content {
+  max-height: 70%;
+  display: grid;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .blogpost-short-content {
+    max-height: 50%;
+  }
+}
+
+.blogpost-short-content-button {
+  max-width: 15rem;
+}
+
+/**
+-----
+404 Page
+-----
+**/
+
+/* Hero Section */
+
+.hero-404 {
+  background-image: url('/assets/404.jpg');
+  background-position: left center;
 }
