@@ -32,6 +32,15 @@ form {
   width: 100%;
 }
 
+pre code {
+  background-color: var(--clr-primary-1);
+  border: 1px solid #999;
+  color: var(--clr-white);
+  display: block;
+  padding: 1rem;
+  max-width: 50rem;
+}
+
 /* Global Classes */
 
 .section {
@@ -201,6 +210,12 @@ Archive Page
 .blogpost-short-content-button {
   max-width: 15rem;
 }
+
+/**
+-----
+Post Page
+-----
+**/
 
 /**
 -----
