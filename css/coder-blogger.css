@@ -32,15 +32,6 @@ form {
   width: 100%;
 }
 
-pre code {
-  background-color: var(--clr-primary-1);
-  border: 1px solid #999;
-  color: var(--clr-white);
-  display: block;
-  padding: 1rem;
-  max-width: 50rem;
-}
-
 /* Global Classes */
 
 .section {
@@ -91,6 +82,34 @@ pre code {
 @media screen and (max-width: 767px) {
   .section-form {
     padding: 1rem;
+  }
+}
+
+.code-block {
+  max-width: 55rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blur-image {
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 992px) {
+  .move-image-left {
+    position: relative;
+    left: -3rem;
+    top: -2rem;
+  }
+
+  .move-image-right {
+    position: relative;
+    left: 3rem;
+    top: -2rem;
+  }
+
+  .increase-z-index {
+    z-index: 2;
   }
 }
 

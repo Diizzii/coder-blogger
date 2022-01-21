@@ -7,6 +7,7 @@
     <title>Coder Blogger</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/coder-blogger.css" />
+    <link rel="stylesheet" href="/css/prism.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -59,10 +60,10 @@
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md order-md-2 section-grid">
-            <img src="/assets/about.jpg" alt="about-pic" class="img-fluid section-image">
+          <div class="col-md order-md-2 section-grid move-image-left">
+            <img src="/assets/about.jpg" alt="about-pic" class="img-fluid section-image blur-image">
           </div>
-          <div class="col-md section-grid order-md-1">
+          <div class="col-md section-grid order-md-1 increase-z-index">
             <div class="section-card">
               <h2>About This Project</h2>
               <h5 class="mb-4">All You Need to Know</h5>
@@ -97,10 +98,10 @@
     <section class="section section-alternate">
       <div class="container">
         <div class="row">
-          <div class="col-md section-grid">
-            <img src="/assets/content.jpg" alt="content-pic" class="img-fluid section-image">
+          <div class="col-md section-grid move-image-right">
+            <img src="/assets/content.jpg" alt="content-pic" class="img-fluid section-image blur-image">
           </div>
-          <div class="col-md section-grid">
+          <div class="col-md section-grid increase-z-index">
             <div class="section-card section-card-alternate">
               <h2>What Content to Expect</h2>
               <h5 class="mb-4">These Will Be Our Topics</h5>
@@ -124,7 +125,7 @@
         <div class="row">
           <div class="col-md mb-2">
             <div class="card text-center">
-              <img class="card-img-top w-25 mx-auto mt-3 mb-2 bg-secon" src="/assets/file-slides-fill.svg" alt="help icon">
+              <img class="card-img-top w-25 mx-auto mt-3 mb-2" src="/assets/file-slides-fill.svg" alt="help icon">
               <div class="card-body">
                 <h5 class="card-title">How Will This Site Help Me?</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -163,13 +164,13 @@
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md order-md-2 section-grid">
-            <img src="/assets/contact.jpg" alt="content-pic" class="img-fluid section-image mb-sm-3">
+          <div class="col-md order-md-2 section-grid move-image-left">
+            <img src="/assets/contact.jpg" alt="content-pic" class="img-fluid section-image mb-sm-3 blur-image">
           </div>
-          <div class="col-md order-md-1">
+          <div class="col-md order-md-1 increase-z-index">
             <h2>Get In Touch!</h2>
             <h5 class="mb-3">We Look Forward To Hearing From You</h5>
-            <form action="" class="section-form">
+            <form action="" class="section-form bg-white">
               <div class="form-group mb-3">
                 <label for="exampleFormControlInput1">Name</label>
                 <input type="text" class="form-control" id="" placeholder="Your Name">
@@ -206,5 +207,6 @@
 
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/prism.js"></script>
   </body>
 </html>

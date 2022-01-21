@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coder Blogger</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/coder-blogger.css" />
   </head>
   <body>
@@ -61,40 +62,111 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa amet quidem corrupti quibusdam ipsa magni, quasi id maiores explicabo consequatur vero animi, porro deleniti recusandae debitis ducimus quia tenetur iure.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum autem tenetur dolorem molestias, laborum qui odit iusto officiis quibusdam porro deleniti blanditiis nesciunt esse aliquid optio accusamus assumenda hic! Tempore, rem sunt. Quos molestias in rerum unde nihil? Provident tenetur autem quae accusamus debitis beatae vitae incidunt molestias et deserunt similique dolorem, impedit doloribus, sapiente quia iste, esse obcaecati laborum alias harum? Quasi nesciunt repudiandae sit, velit eos adipisci dolorem. Dolorem, incidunt ipsum molestias commodi doloremque, amet architecto rem sapiente sint labore quo saepe deserunt vel! Itaque nam nobis deserunt sint voluptate voluptatum eius, magni voluptates ad quam facilis?
         </p>
-        <pre>
-          <code>
-            &lt;?php
-              $new_var = 12;
-              $to_multiply = 24;
-              $result = $new_var * $to_multiply;
-              echo $result;
-            ?&gt;
-          </code>
-        </pre>
+        <div class="code-block">
+          <pre>
+            <code class="language-css">
+              /* Global Classes */
+
+              .section {
+                min-height: 65vh;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+              }
+
+              @media screen and (max-width: 1199px) {
+                .section {
+                  padding-top: 2rem;
+                  padding-bottom: 2rem;
+                }
+              }
+
+              .section-alternate {
+                background-color: var(--clr-primary-9);
+              }
+
+              .section-image {
+                display: block;
+                max-height: 35rem;
+                width: 100%;
+                object-fit: fill;
+              }
+
+              .section-grid {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+              }
+            </code>
+          </pre>
+        </div>
+        
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nihil magnam consectetur sed aspernatur beatae eligendi eum repudiandae, architecto sapiente eius quo! Magnam et quis obcaecati, atque voluptas illo nihil error a placeat, minus maiores. Esse saepe inventore maiores quod fugit reprehenderit et atque eius ut, nemo, obcaecati voluptatum, natus iste! Nam blanditiis atque unde, nobis illo eligendi adipisci, voluptas explicabo consectetur aperiam voluptatem ipsum deserunt magnam doloremque omnis perspiciatis? Deserunt itaque repellendus ipsa alias quaerat vitae, est rerum numquam!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum unde dolor, omnis veritatis in obcaecati reprehenderit, architecto ea, tempora nemo reiciendis delectus sequi nam placeat aspernatur eveniet natus assumenda voluptatem ut cumque dignissimos ratione molestias? Dolores modi dicta atque ut consequatur enim, asperiores fugit inventore tempora repellat, libero quod!</p>
-        <pre>
-          <code>
-            &lt;?php
-              $new_var = 12;
-              $to_multiply = 24;
-              $result = $new_var * $to_multiply;
-              echo $result;
+        
+        <div class="code-block">
+            <pre>
+              <code class="language-php">
+                &lt;?php
+                /**
+                * The template for displaying search results pages
+                *
+                * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+                *
+                * @package coder-blogger
+                */
 
-              $new_var = 12;
-              $to_multiply = 24;
-              $result = $new_var * $to_multiply;
-              echo $result;
+                get_header();
+                ?>
 
-              $new_var = 12;
-              $to_multiply = 24;
-              $result = $new_var * $to_multiply;
-              echo $result;
-            ?&gt;
-          </code>
-        </pre>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt eveniet, culpa consequuntur dolores quisquam hic velit illum? Ipsam itaque necessitatibus possimus ex neque eum similique voluptatibus adipisci nostrum ducimus!</p>
-        <a href="/index.html" class="btn btn-dark text-light btn-lg">Back Home</a>
+                  &lt;main id="primary" class="site-main">
+
+                    &lt;?php if ( have_posts() ) : ?>
+
+                      &lt;header class="page-header">
+                        &lt;h1 class="page-title">
+                          &lt;?php
+                          /* translators: %s: search query. */
+                          printf( esc_html__( 'Search Results for: %s', 'coder-blogger' ), '<span>' . get_search_query() . '</span>' );
+                          ?>
+                        &lt;/h1>
+                      &lt;/header><!-- .page-header -->
+
+                      &lt;?php
+                      /* Start the Loop */
+                      while ( have_posts() ) :
+                        the_post();
+
+                        /**
+                        * Run the loop for the search to output the results.
+                        * If you want to overload this in a child theme then include a file
+                        * called content-search.php and that will be used instead.
+                        */
+                        get_template_part( 'template-parts/content', 'search' );
+
+                      endwhile;
+
+                      the_posts_navigation();
+
+                    else :
+
+                      get_template_part( 'template-parts/content', 'none' );
+
+                    endif;
+                    ?>
+
+                  &lt;/main><!-- #main -->
+
+                &lt;?php
+                get_sidebar();
+                get_footer();
+              </code>
+            </pre>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt eveniet, culpa consequuntur dolores quisquam hic velit illum? Ipsam itaque necessitatibus possimus ex neque eum similique voluptatibus adipisci nostrum ducimus!</p>
+          <a href="/index.html" class="btn btn-dark text-light btn-lg">Back Home</a>
+        </div>
+
       </div>
     </section>
 
@@ -113,4 +185,5 @@
     </footer>
 
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/prism.js"></script>
 </html>
